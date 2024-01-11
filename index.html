@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Frameless Button</title>
+</head>
+<body>
+    <section class="btn_sidebar--responsive">
+
+        <div class="menu-toggle">
+            <div class="hamburger">
+                <span></span>
+            </div>
+
+        </div>
+
+        <aside class="sidebar--responsive">
+            <h3>Menu</h3>
+
+            <nav class="menu">
+                <a href="#" class="menu-item">Accordion</a>
+                <a href="#" class="menu-item">Avatar</a>
+                <a href="#" class="menu-item">Backlink</a>
+                <a href="#" class="menu-item">Breadcrum navigation</a>
+                <a href="#" class="menu-item is-active ">Button</a>
+                <a href="#" class="menu-item">CAPTCHA</a>
+                <a href="#" class="menu-item">Card</a>
+            </nav>
+
+        </aside>
+
+        <main class="content">
+
+            <h1>Button</h1>
+
+            <div class="label">
+                <p>Community</p>
+            </div>
+
+            <p class="btn_expl--groot">Buttons worden gebruikt om acties uit te voeren.</p>
+            <p class="btn_expl--klein">Ook bekend als: Boeton, Beton, Nottub of Knoppie.
+                Gerelateerde componenten: Link als button, Destructieve button, Button groep 
+                Bijvoorbeeld gebruikt in: Open Formulieren, Huwelijksplanner en Eigen Template</p>
+
+        </main>
+
+        
+
+    </section>
+    <script>
+		const menu_toggle = document.querySelector('.menu-toggle');
+		const sidebar = document.querySelector('sidebar--responsive');
+
+		menu_toggle.addEventListener('click', () => {
+			menu_toggle.classList.toggle('is-active');
+			sidebar.classList.toggle('is-active');
+		});
+	</script>
+</body>
+</html>
